@@ -113,6 +113,7 @@ public class XmlReader {
 //                         
                       String  s=eElement.getElementsByTagName("head").item(0).getTextContent();
                       String  s1=eElement.getElementsByTagName("paragraph").item(0).getTextContent();
+                      System.out.println(s);
                       map.put(s, s1);
 //                      if((s.contains("দেখুন"))||(s.contains("রাখুন"))||(s.contains("খুনির"))||(s.contains("খুনিকে"))||(s.contains("খুনিদের")))
 //                      {
@@ -136,12 +137,12 @@ public class XmlReader {
     catch (Exception e) {
 	//e.printStackTrace();
     }
-       Iterator it = map.entrySet().iterator();
-    while (it.hasNext()) {
-        Map.Entry pair = (Map.Entry)it.next();
-        System.out.println(pair.getKey());
-        it.remove(); // avoids a ConcurrentModificationException
-    }
+//       Iterator it = map.entrySet().iterator();
+//    while (it.hasNext()) {
+//        Map.Entry pair = (Map.Entry)it.next();
+//        System.out.println(pair.getKey());
+//        it.remove(); // avoids a ConcurrentModificationException
+//    }
   }
-    
+   
 }

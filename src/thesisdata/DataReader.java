@@ -22,7 +22,7 @@ import java.util.*;
  *
  * @author Herock
  */
-public class ThesisDataReader {
+public class DataReader {
 
     /**
      * @param args the command line arguments
