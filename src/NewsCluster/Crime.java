@@ -5,40 +5,40 @@
  */
 package NewsCluster;
 
-/**
- *
- * @author Herock
- */
-import info.debatty.java.stringsimilarity.*;
+import info.debatty.java.stringsimilarity.Cosine;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Political {
-     ArrayList<String> murder = new ArrayList<String>();
-    public Political()
+/**
+ *
+ * @author Herock
+ */
+public class Crime {
+    ArrayList<String> grammer = new ArrayList<String>();
+    public Crime()
     {
-        
-        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/politics.txt"))) {
+         
+        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/crime.txt"))) {
             String line;
             int counter = 0, counter1 = 0;
             while ((line = br.readLine()) != null) {
                // System.out.println(line);
-              murder.add(line);
+              grammer.add(line);
             }
         } catch (Exception ex) {
 
         }
-        
+
     }
-  public float sendScore(String newsdata) {
+      public float sendScore(String newsdata) {
        Cosine cosine = new Cosine();
        float match=(float) 0.00;
         float temp;
-        for(int i=0;i<murder.size();i++)
+        for(int i=0;i<grammer.size();i++)
         {
              
-          temp =(float) cosine.similarity(murder.get(i), newsdata);
+          temp =(float) cosine.similarity(grammer.get(i), newsdata);
            // System.out.println(temp);
           if(temp>match)
           {
@@ -49,4 +49,5 @@ public class Political {
         
         return match;
     }
+    
 }

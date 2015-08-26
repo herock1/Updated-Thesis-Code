@@ -19,7 +19,7 @@ public class Murder {
    public Murder()
    {
        
-        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/accident.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/Murder.txt"))) {
             String line;
             int counter = 0, counter1 = 0;
             while ((line = br.readLine()) != null) {

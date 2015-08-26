@@ -32,7 +32,7 @@ public class ThesisDataReader_1 {
             String line;
             int counter=0;
             while ((line = br.readLine()) != null) {
-                System.out.println(line);
+               // System.out.println(line);
                
                 //System.out.println(line);
                 // process the line.
