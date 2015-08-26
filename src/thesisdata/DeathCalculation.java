@@ -22,6 +22,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+<<<<<<< HEAD
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,20 +36,40 @@ public class DeathCalculation extends JFrame{
     Murder murder = new Murder();
     Political polics = new Political();
     Crime crime = new Crime();
+=======
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class DeathCalculation extends JFrame {
+
+>>>>>>> origin/master
     JButton b1 = new JButton();
     JLabel label1 = new JLabel();
     JLabel l2 = new JLabel();
     JLabel label3 = new JLabel();
     JLabel l4 = new JLabel();
+<<<<<<< HEAD
      JLabel maintext = new JLabel();
 
     public DeathCalculation() throws IOException {
          super.setSize(400, 500);
        super.setLayout(null);
+=======
+
+    public DeathCalculation() throws IOException {
+        Accident a = new Accident();
+
+       
+        super.setSize(400, 500);
+       
+>>>>>>> origin/master
          b1.setSize(200, 70);
         b1.setBounds(100, 50, 150, 50);
         b1.setText("Analysis Data");
         //For Label
+<<<<<<< HEAD
         maintext.setBounds(50, 10, 350, 30);
         label1.setBounds(30, 140, 250, 40);
         l2.setBounds(30, 200, 250, 40);
@@ -61,13 +82,27 @@ public class DeathCalculation extends JFrame{
         l4.setText("Crime: ");
         maintext.setText("Death Causes Detection Based On Newspaper Data");
         maintext.setForeground(Color.red);
+=======
+        label1.setBounds(20, 140, 250, 40);
+        l2.setBounds(20, 190, 250, 40);
+        label3.setBounds(20, 240, 250, 40);
+        l4.setBounds(20, 290, 250, 40);
+
+        label1.setText("Larum spum");
+        l2.setText("Larum spum Hello");
+        label3.setText("Larum spum  22");
+        l4.setText("Hello world");
+>>>>>>> origin/master
 
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //button is pressed
                 System.out.println("You clicked the button");
                 l2.setText("Gekki Fycj");
+<<<<<<< HEAD
                 calculate();
+=======
+>>>>>>> origin/master
             }
         });
         super.add(b1);
@@ -75,6 +110,7 @@ public class DeathCalculation extends JFrame{
         super.add(l2);
         super.add(label3);
         super.add(l4);
+<<<<<<< HEAD
         super.add(maintext);
         super.setVisible(true);
 
@@ -84,6 +120,10 @@ public class DeathCalculation extends JFrame{
     public void calculate()
     {
           try {
+=======
+        super.setVisible(true);
+        try {
+>>>>>>> origin/master
 
             File fXmlFile = new File("TestXML.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -106,6 +146,7 @@ public class DeathCalculation extends JFrame{
                     org.w3c.dom.Element eElement = (org.w3c.dom.Element) nNode;
 
                     String head = eElement.getElementsByTagName("head").item(0).getTextContent();
+<<<<<<< HEAD
                     String body = eElement.getElementsByTagName("paragraph").item(0).getTextContent();
                     if ((head.contains("দেখুন")) || (head.contains("রাখুন")) || (head.contains("খুনির")) || (head.contains("খুনিকে")) || (head.contains("খুনিদের")) || (head.contains("মৃত্যুবার্ষিকী")) || (head.contains("স্মৃতি")) || (head.contains("স্মরণীয়"))) {
 
@@ -116,6 +157,10 @@ public class DeathCalculation extends JFrame{
                     }
                       // avoids ConcurrentModificationException
 
+=======
+                    float f = a.sendScore(head);
+                    System.out.println(head + " Final Output: " + f);
+>>>>>>> origin/master
                 }
             }
         } catch (Exception e) {
@@ -179,6 +224,13 @@ public class DeathCalculation extends JFrame{
         label3.setText("Political: "+Integer.toString(tpolitics));
         l4.setText("Crime: "+Integer.toString(tcrime));
    
+    }
+    /*b1*/
+
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == b1) {
+            System.out.println("Hello World");
+        }
     }
 
     public static void main(String args[]) throws IOException {
