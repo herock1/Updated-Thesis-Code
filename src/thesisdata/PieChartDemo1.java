@@ -10,6 +10,9 @@ package thesisdata;
  * @author Herock
  */
 import java.awt.Font;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 
 import javax.swing.JPanel;
 
@@ -45,13 +48,22 @@ public class PieChartDemo1 extends ApplicationFrame {
      */
     private static PieDataset createDataset() {
         DefaultPieDataset dataset = new DefaultPieDataset();
-        dataset.setValue("One", new Double(43.2));
-        dataset.setValue("Two", new Double(10.0));
-        dataset.setValue("Three", new Double(27.5));
-        dataset.setValue("Four", new Double(17.5));
-        dataset.setValue("Five", new Double(11.0));
-        dataset.setValue("Six", new Double(19.4));
-        return dataset;        
+     try (BufferedReader br = new BufferedReader(new FileReader("summery.txt"))) {
+            String line;
+            
+            while ((line = br.readLine()) != null) {
+                String st[];
+                st=line.split(" ");
+                
+        dataset.setValue(st[0], new Double(st[1]));
+        
+        }
+     }
+        catch(Exception ex)
+        {
+           // return dataset;
+        }
+      return dataset;
     }
     
     /**
@@ -64,7 +76,7 @@ public class PieChartDemo1 extends ApplicationFrame {
     private static JFreeChart createChart(PieDataset dataset) {
         
         JFreeChart chart = ChartFactory.createPieChart(
-            "Pie Chart Demo 1",  // chart title
+            "Death Causes Detection",  // chart title
             dataset,             // data
             true,               // include legend
             true,
@@ -97,7 +109,7 @@ public class PieChartDemo1 extends ApplicationFrame {
      */
     public static void main(String[] args) {
 
-        PieChartDemo1 demo = new PieChartDemo1("Pie Chart Demo 1");
+        PieChartDemo1 demo = new PieChartDemo1("Death Causes Detection Data");
         demo.pack();
         RefineryUtilities.centerFrameOnScreen(demo);
         demo.setVisible(true);
