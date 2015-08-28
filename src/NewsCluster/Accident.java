@@ -44,7 +44,7 @@ public class Accident {
         {
              
           temp =(float) cosine.similarity(grammer.get(i), newsdata);
-           // System.out.println(temp);
+            //System.out.println(grammer.get(i)+" "+temp);
           if(temp>match)
           {
               match=temp;

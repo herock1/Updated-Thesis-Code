@@ -1,0 +1,4 @@
+Accident 811
+Murder 155
+Political 5
+Crime 560

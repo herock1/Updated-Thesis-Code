@@ -19,7 +19,7 @@ public class Political {
     public Political()
     {
         
-        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/accident.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("Grammer/politics.txt"))) {
             String line;
             int counter = 0, counter1 = 0;
             while ((line = br.readLine()) != null) {
