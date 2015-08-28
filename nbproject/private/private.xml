@@ -3,11 +3,44 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/NewsCluster/Political.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/NewsCluster/Suicide.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/DeathCalculation.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/NewsCluster/Crime.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/XmlWriter.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/ThesisDataReader_1.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/DataReader.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/info/debatty/java/stringsimilarity/examples/SparseDoubleVectorExample.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/hello.html</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/NewsCluster/Accident.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/XmlReader.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/MyApp.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/thesisdata/newXMLDocument.xml</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java</file>
+            <file>file:/Users/Herock/Documents/Thesis/ThesisData/src/NewsCluster/Murder.java</file>
+=======
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/ThesisDataReader_1.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/DataReader.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/info/debatty/java/stringsimilarity/Cosine.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java</file>
+>>>>>>> origin/master
             <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/DeathCalculation.java</file>
             <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/NumCal.java</file>
+<<<<<<< HEAD
             <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/NewsCluster/Accident.java</file>
             <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/NewsCluster/Crime.java</file>
             <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/PieChartDemo1.java</file>
+=======
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java</file>
+            <file>file:/Users/herock/Documents/Updated-Thesis-Code/src/thesisdata/XmlWriter.java</file>
+>>>>>>> origin/master
+>>>>>>> origin/master
         </group>
     </open-files>
 </project-private>

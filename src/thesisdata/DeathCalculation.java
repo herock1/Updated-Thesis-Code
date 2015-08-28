@@ -33,7 +33,10 @@ public class DeathCalculation extends JFrame{
 
     TreeMap<Double, String> hash = new TreeMap<>();
     TreeMap<String, String> newsData = new TreeMap<>();
+<<<<<<< HEAD
     HashMap<String,String> numcal = new HashMap<>();
+=======
+>>>>>>> origin/master
     Accident accident = new Accident();
     Murder murder = new Murder();
     Political polics = new Political();
@@ -80,12 +83,16 @@ public class DeathCalculation extends JFrame{
         super.add(l4);
         super.add(maintext);
         super.setVisible(true);
+<<<<<<< HEAD
         loadnum();
         
+=======
+>>>>>>> origin/master
 
 //Read more: http://java67.blogspot.com/2013/08/best-way-to-iterate-over-each-entry-in.html#ixzz3jnSa0S4w
       
     }
+<<<<<<< HEAD
     public void loadnum()
     {
          try (BufferedReader br = new BufferedReader(new FileReader("banglanum.txt"))) {
@@ -107,6 +114,10 @@ public class DeathCalculation extends JFrame{
     {
         
         
+=======
+    public void calculate()
+    {
+>>>>>>> origin/master
           try {
 
             File fXmlFile = new File("TestXML.xml");
@@ -131,7 +142,11 @@ public class DeathCalculation extends JFrame{
 
                     String head = eElement.getElementsByTagName("head").item(0).getTextContent();
                     String body = eElement.getElementsByTagName("paragraph").item(0).getTextContent();
+<<<<<<< HEAD
                     if ((head.contains("দেখুন")) || (head.contains("রাখুন")) || (head.contains("খুনির")) || (head.contains("খুনিকে")) || (head.contains("খুনিদের")) || (head.contains("মৃত্যুবার্ষিকী")) || (head.contains("স্মৃতি")) || (head.contains("স্মরণীয়"))|| (head.contains("স্মরণ")) || (head.contains("মৃত্যুতে")) || (head.contains("মৃত্যুর"))|| (head.contains("খুনের"))|| (head.contains("মৃত্যুঝুঁকি"))) {
+=======
+                    if ((head.contains("দেখুন")) || (head.contains("রাখুন")) || (head.contains("খুনির")) || (head.contains("খুনিকে")) || (head.contains("খুনিদের")) || (head.contains("মৃত্যুবার্ষিকী")) || (head.contains("স্মৃতি")) || (head.contains("স্মরণীয়"))|| (head.contains("স্মরণ"))) {
+>>>>>>> origin/master
 
                     } else {
                         newsData.put(head, body);
@@ -181,6 +196,7 @@ public class DeathCalculation extends JFrame{
             }
 
             if (category_final.equals("accident")) {
+<<<<<<< HEAD
                 String num[];
                 int flag=0;
                 num=head.split(" ");
@@ -276,6 +292,15 @@ public class DeathCalculation extends JFrame{
                 {
                 tcrime++;
                 }
+=======
+                taccident++;
+            } else if (category_final.equals("political")) {
+                tpolitics++;
+            } else if (category_final.equals("murder")) {
+                tmurder++;
+            } else if (category_final.equals("crime")) {
+                tcrime++;
+>>>>>>> origin/master
             }
             
 
@@ -284,6 +309,7 @@ public class DeathCalculation extends JFrame{
             hash.clear();
             // iterator.remove(); // right way to remove entries from Map, 
 
+<<<<<<< HEAD
         }
           label1.setText("Accident: "+Integer.toString(taccident));
           
@@ -380,11 +406,49 @@ public class DeathCalculation extends JFrame{
         return output;
       
     }
+=======
+        }
+          label1.setText("Accident: "+Integer.toString(taccident));
+          
+        l2.setText("Murder: "+Integer.toString(tmurder));
+        label3.setText("Political: "+Integer.toString(tpolitics));
+        l4.setText("Crime: "+Integer.toString(tcrime));
+    
+ try{
+      File file = new File("summery.txt");
+      // creates the file
+      file.createNewFile();
+      // creates a FileWriter Object
+      FileWriter writer = new FileWriter(file); 
+      // Writes the content to the file
+      writer.write("Accident "+Integer.toString(taccident)); 
+      writer.write("\nMurder "+Integer.toString(tmurder)); 
+      writer.write("\nPolitical "+Integer.toString(tpolitics)); 
+      writer.write("\nCrime "+Integer.toString(tcrime)); 
+      writer.flush();
+      writer.close();
+
+ }
+ catch (Exception ex)
+ {
+     
+ }
+
+    PieChartDemo1 demo = new PieChartDemo1("Pie Chart Demo 1");
+        demo.pack();
+        RefineryUtilities.centerFrameOnScreen(demo);
+        demo.setVisible(true);
+   
+   }
+>>>>>>> origin/master
 
     public static void main(String args[]) throws IOException {
         new DeathCalculation();
         
+<<<<<<< HEAD
         
+=======
+>>>>>>> origin/master
     }
 
 }

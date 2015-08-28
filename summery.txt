@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 Accident 811
 Murder 155
 Political 5
 Crime 560
+=======
+Accident 114
+Murder 62
+Political 3
+Crime 31
+>>>>>>> origin/master
